@@ -1,0 +1,45 @@
+{
+  "name": "your-app",
+  "description": "Description",
+  "author": "Your Name",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "postinstall": [
+      "cp -r node_modules/font-awesome/fonts public/fonts",
+      "cp -r node_modules/bootstrap/dist/fonts public/fonts"
+    ]
+  },
+  "dependencies": {
+    "backbone": "1.3.3",
+    "backbone-validation": "^0.11.5",
+    "backbone.marionette": "2.4.6",
+    "backbone.radio": "^1.0.5",
+    "backbone.stickit": "0.8.0",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "4.6.3",
+    "handlebars-brunch": "^2.0.1",
+    "http-proxy": "^1.14.0",
+    "jquery": "2.1.1",
+    "moment": "2.14.1",
+    "moment-timezone": "0.5.5",
+    "spin.js": "2.0.1",
+    "swag": "0.6.1"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "^2.0.0",
+    "babel-brunch": "6.0.5",
+    "babel-preset-es2015": "~6.3.13",
+    "body-parser": "^1.15.2",
+    "brunch": "^2.4.0",
+    "clean-css-brunch": "^2.0.0",
+    "css-brunch": "^2.0.0",
+    "express": "^4.14.0",
+    "javascript-brunch": "^2.0.0",
+    "morgan": "^1.7.0",
+    "uglify-js-brunch": "^2.0.0"
+  }
+}

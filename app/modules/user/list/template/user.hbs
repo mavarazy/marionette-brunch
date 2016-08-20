@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div id="global-error">
+        <span class="help-block hidden"></span>
+    </div>
+    <div class="col-md-4">
+        <a bb-href="user/{{username}}">{{username}}</a>
+    </div>
+    <div class="col-md-5">
+        <div class="btn-group btn-group-sm">
+            <button id="user" class="btn btn-{{#if isUser}}primary{{else}}default{{/if}}"> User</button>
+            <button id="manager" class="btn btn-{{#if isManager}}primary{{else}}default{{/if}}"> Manager</button>
+            <button id="admin" class="btn btn-{{#if isAdmin}}primary{{else}}default{{/if}}"> Admin</button>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="btn-group btn-group-sm">
+            <button id="delete" class="btn btn-default"><span class="fa fa-trash"/> Delete</button>
+        </div>
+    </div>
+</div>
+<br/>
