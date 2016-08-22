@@ -45,12 +45,14 @@ let Behaviors = {
     }),
     Navigation: Marionette.Behavior.extend({
         events: {
-            'click [bb-href]' : 'navigateTo'
+            'click [href]' : 'navigateTo'
         },
         navigateTo(evt) {
-            let dest = evt.target.getAttribute("bb-href");
-            console.log(`Navigating to ${dest}`);
-            Backbone.history.navigate(dest, { trigger: true })
+            let dest = evt.target.getAttribute("href");
+            if (dest.startsWith("/")) {
+                evt.preventDefault();
+                Backbone.history.navigate(dest, {trigger: true})
+            }
         }
     }),
     Validation: Marionette.Behavior.extend({
